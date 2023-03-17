@@ -2,7 +2,7 @@ import React from "react"
 
 import Button from "@material-ui/core/Button"
 import { withStyles } from "@material-ui/core/styles"
-import { Redirect } from "react-router-dom"
+import { redirect } from "react-router-dom"
 
 import "./Text.scss"
 
@@ -36,7 +36,8 @@ class Text extends React.Component {
   }
 
   render(){
-    const {openChat} = this.state
+    const {click} = this.props
+    console.log(this.props)
 
     return (
       <div className="text">
@@ -47,10 +48,9 @@ class Text extends React.Component {
           Marcação online e atendimento acessível. Forma de utilizar
           a tecnologia a favor de pessoas com cuidados especiais.
         </div>
-        <ColorButton variant="contained" color="primary" className='button' disableElevation onClick={this.openChat}>
+        <ColorButton variant="contained" color="primary" className='button' disableElevation onClick={click}>
           Marcar consulta
         </ColorButton>
-        {openChat && <Redirect to={{ pathname: "/appointments" }} />}
       </div>
     )
   }

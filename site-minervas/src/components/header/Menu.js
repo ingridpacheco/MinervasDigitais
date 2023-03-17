@@ -1,12 +1,12 @@
 import React, {useState} from "react"
 
 //import { useAuth0 } from "@auth0/auth0-react"
-//import Button from "@material-ui/core/Button"
+import Button from "@material-ui/core/Button"
 import { makeStyles } from '@material-ui/core/styles';
 
 //import LoginButton from "../authentication/LoginButton"
-//import { useLocation, Redirect } from 'react-router-dom'
-//import User from "./User"
+import { useLocation, redirect } from 'react-router-dom'
+// import User from "./User"
 
 import "./Menu.scss"
 
@@ -41,22 +41,22 @@ const useStyles = makeStyles({
 
 function Menu() {
   const [page, setPage] = useState("")
-  const { isAuthenticated } = useAuth0()
-  let location = useLocation();
+  // const { isAuthenticated } = useAuth0()
+  // let location = useLocation();
   const classes = useStyles();
 
   return (
     <div className="button-group">
-      <Button
+      {/* <Button
         classes={{
           root: location.pathname === "/" ? classes.selected : classes.root,
           label: classes.label,
         }}
         onClick={() => setPage("/")}
       >
-        {isAuthenticated ? ("Dashboard") : ("Home")}
-      </Button>
-      <Button
+        Home
+      </Button> */}
+      {/* <Button
         classes={{
           root: (location.pathname === "/appointments" || location.pathname ===  "/doctor") ? classes.selected : classes.root,
           label: classes.label,
@@ -64,8 +64,8 @@ function Menu() {
         onClick={() => setPage("/appointments")}
       >
         Consultas
-      </Button>
-      <Button
+      </Button> */}
+      {/* <Button
         classes={{
           root: location.pathname === "/resources" ? classes.selected : classes.root,
           label: classes.label,
@@ -73,26 +73,25 @@ function Menu() {
         onClick={() => setPage("/resources")}
       >
         Recursos
-      </Button>
-      <Button
+      </Button> */}
+      {/* <Button
         classes={{
           root: location.pathname === "/services" ? classes.selected : classes.root,
           label: classes.label,
         }}
       >
         Serviços
-      </Button>
-      <Button
+      </Button> */}
+      {/* <Button
         classes={{
           root: location.pathname === "/about" ? classes.selected : classes.root,
           label: classes.label,
         }}
       >
         Sobre nós
-      </Button>
+      </Button> */}
 
-      {!isAuthenticated ? (<LoginButton />) : (<User />)}
-      {page !== "" && <Redirect to={{ pathname: page }} />}
+      {/* {!isAuthenticated ? (<LoginButton />) : (<User />)} */}
     </div>
   )
 }
