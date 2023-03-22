@@ -1,6 +1,7 @@
 import React, {useRef} from "react"
 
-import doctors from "../../assets/doctors.svg"
+// import doctors from "../../assets/doctors.svg"
+import computer from "../../assets/HomeIMG.svg"
 import Text from "./Text"
 import TextField from '@material-ui/core/TextField';
 
@@ -16,11 +17,11 @@ function Content() {
     <div>
       <div className="home-content">
         <Text click={() => handleClick()}/>
-        <img src={doctors} className="doctors" alt="doctors" />
+        <img src={computer} className="doctors" alt="doctors" />
       </div>
-      <div ref={ref}>
+      {/* <div ref={ref}>
         <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-      </div>
+      </div> */}
     </div>
   )
 }
