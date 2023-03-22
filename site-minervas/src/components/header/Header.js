@@ -1,6 +1,6 @@
 import React from "react"
 
-import logo from "../../assets/logo.svg"
+import logonova from "../../assets/logonova.svg"
 import Menu from "./Menu"
 
 import "./Header.scss"
@@ -8,7 +8,7 @@ import "./Header.scss"
 function Header() {
   return (
     <div className="header">
-      <img src={logo} className="logo" alt="logo" />
+      <img src={logonova} className="logo" alt="logo" />
       <Menu />
     </div>
   )
