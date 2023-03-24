@@ -1,15 +1,15 @@
 import React from "react"
 
-import logo from "../../assets/logo-branca.svg"
+import whiteLine from "../../assets/white-line.svg"
 
 import "./Footer.scss"
 
 function Footer() {
   return (
     <div className="footer">
-      <img src={logo} className="logo" alt="logo" />
+      <img src={whiteLine} className="white-line" alt="white-line" />
       <div className="copyright">
-        ©Clinicall LTD 2020. Todos os direitos reservados.
+        Minerv@s Digitais UFRJ © 2022 - Todos os direitos reservados
       </div>
     </div>
   )

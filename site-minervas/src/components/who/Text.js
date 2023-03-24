@@ -10,8 +10,8 @@ const ColorButton = withStyles(() => ({
   root: {
     textTransform: "none",
     borderRadius: 55,
-    fontFamily: "Mulish",
-    fontWeight: "bold",
+    fontFamily: "Lato",
+    fontWeight: 300,
     backgroundColor: "#096262",
     "&:hover": {
       backgroundColor: "#13BADE",
