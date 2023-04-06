@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+
+.motivation-text {
+  width: '100%';
+  max-width: 500;
+  margin: 0px 50px 0px 95px;
+  text-align: left;
+
+  .title {
+    font-family: 'Poppins', sans-serif;
+    color: #3F005E;
+    font-weight: 800;
+    font-size: 48px;
+  }
+
+  .first-motivation {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 20px 250px 20px 0px;
+    text-align: justify;
+  }
+
+  .second-motivation {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 20px 250px 20px 0px;
+    text-align: justify;
+  }
+
+  .button-box {
+    width: 60%;
+    text-align: center;
+  }
+
+  .button {
+    color: black;
+    background-color: #FFBD59;
+    font-size: 18px;
+    width: 200px;
+  }
+
+}
