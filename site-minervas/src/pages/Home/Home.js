@@ -6,6 +6,7 @@ import Header from "../../components/header/Header"
 import Motivation from "../../components/motivation/Motivation"
 import Partners from "../../components/partners/Partners"
 import Who from "../../components/who/Who"
+import Net from "../../components/net/Net"
 
 import "./Home.scss"
 
@@ -17,6 +18,7 @@ function Home() {
       <Who />
       <Motivation />
       <Partners />
+      <Net />
       <Footer />
     </div>
   )

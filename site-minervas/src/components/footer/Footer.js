@@ -9,7 +9,7 @@ function Footer() {
     <div className="footer">
       <img src={whiteLine} className="white-line" alt="white-line" />
       <div className="copyright">
-        Minerv@s Digitais UFRJ © 2022 - Todos os direitos reservados
+        Minerv@s Digitais UFRJ © 2023 - Todos os direitos reservados
       </div>
     </div>
   )
